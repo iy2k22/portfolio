@@ -1,0 +1,34 @@
+:root {
+    --bg-color: #4271b5;
+    --fg-color: white;
+    --dark-fg: gray;
+    --header-color: #fffb63;
+    --shadow: 5px 1px 0 #425152;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+a {
+    color: var(--fg-color);
+}
+
+h1, h2, h3 a {
+    text-transform: uppercase;
+    color: var(--header-color);
+    text-shadow: var(--shadow);
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: var(--fg-color);
+}
+
+li a:hover {
+    color: var(--dark-fg);
+}
