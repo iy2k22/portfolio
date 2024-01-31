@@ -65,6 +65,9 @@ li a:hover {
     width: var(--image-size) * 1.78;
     top: 2%;
     left: calc(50% - (var(--image-size) / 2));
+}
+
+.shadow {
     box-shadow: 5px solid black;
 }
 
@@ -74,7 +77,6 @@ li a:hover {
 }
 
 #hero {
-    background-color: var(--box);
     height: 500px;
     margin: 20px;
 }
@@ -83,4 +85,12 @@ li a:hover {
     position: relative;
     top: 50%;
     text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.box {
+    background-color: var(--box);
 }
