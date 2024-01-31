@@ -6,6 +6,7 @@
     --shadow: 3px 1px 0 #425152;
     --grad-end: #f7a263;
     --image-size: 800px;
+    --box: #101010;
 }
 
 body {
@@ -73,11 +74,7 @@ li a:hover {
 }
 
 #hero {
-    background: repeating-linear-gradient(-55deg,
-                #222,
-                #222 10px,
-                #333 10px,
-                #333 20px);
+    background-color: var(--box);
     height: 500px;
     margin: 20px;
 }
