@@ -10,9 +10,102 @@
     --pink-1: #f792a5;
     --pink-2: #f7b2b5;
     --name-color: #e0c028;
+    --mario-width: 300px;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--fg-color);
+}
+
+header {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#heading {
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+#heading h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background: linear-gradient(var(--header-color), var(--grad-end));
+    background-clip: text;
+    color: transparent;
+}
+
+#arrow {
+    justify-content: center;
+    width: 70px;
+}
+
+.box {
+    background-color: var(--box);
+}
+
+#hero {
+    margin: 20px;
+    padding: 20px;
+}
+
+#hero h2 {
+    border-bottom: 2px solid white;
+}
+
+#hero img {
+    width: var(--mario-width);
+    position: relative;
+    left: calc(64 * (var(--mario-width) / 670));
+}
+
+#links {
+    text-align: center;
+}
+
+#links a {
+    text-transform: uppercase;
+    font-size: x-large;
+    background: linear-gradient(180deg, var(--pink-1), var(--pink-2));
+    background-clip: text;
+    color: transparent;
+    padding: 2px;
+}
+
+#links a:hover {
+    border-bottom: 2px solid var(--pink-1);
+}
+
+i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 540px) {
+    #heading {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 912px) {
+    #heading {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    #heading {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    :root {
+        --mario-width: 230px;
+    }
 }
