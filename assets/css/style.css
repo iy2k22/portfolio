@@ -41,6 +41,10 @@ a {
     color: transparent;
 }
 
+#arrowRow {
+    margin-top: 5px;
+}
+
 #arrow {
     justify-content: center;
     width: 70px;
