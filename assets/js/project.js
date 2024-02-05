@@ -8,8 +8,8 @@ const projData = {
     },
     "fe-nc-games": {
         name: "NC Games (Frontend)",
-        repo: "https://github.com/iy2k22/nc-games-frontend",
-        lang: ["React"],
+        repo: "https://github.com/iy2k22/nc-games-fe",
+        lang: ["JavaScript", "React"],
         img: "../assets/images/nc-games-fe.png",
         desc: "The second of my NC Games app. This utilises Axios to fetch data and React to put it on the screen."
     },
