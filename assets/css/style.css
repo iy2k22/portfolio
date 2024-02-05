@@ -54,8 +54,11 @@ a {
     background-color: var(--box);
 }
 
-#hero {
+main {
     margin: 20px;
+}
+
+#hero {
     padding: 20px;
 }
 
@@ -88,6 +91,10 @@ a {
 
 i {
     margin-right: 5px;
+}
+
+.carousel-item img {
+    width: 100px;
 }
 
 @media screen and (max-width: 540px) {
