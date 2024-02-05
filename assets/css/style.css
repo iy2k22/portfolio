@@ -119,6 +119,23 @@ i {
     margin-top: 10px;
 }
 
+.footer-link {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #6392d6;
+    color: #FFFBC6;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-link p {
+    margin-bottom: 0;
+}
+
+.footer-link:hover {
+    color: #fffeea;
+}
+
 @media screen and (max-width: 540px) {
     #heading {
         width: 250px;
