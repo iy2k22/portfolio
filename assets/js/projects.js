@@ -1,7 +1,7 @@
-const genProject = (name, repo, lang, img) => {
+const genProject = (name, link, lang, img) => {
     return {
         name: name,
-        repo: repo,
+        link: link,
         lang: lang,
         img: img || "../assets/images/placeholder.webp"
     };
@@ -31,8 +31,8 @@ $(document).ready(() => {
         projName.text(project.name);
         projName.addClass("boxHeading");
         const projLink = $("<a>");
-        projLink.attr("href", project.repo);
-        projLink.html("<i class=\"fa-brands fa-github-alt\"></i>GitHub");
+        projLink.attr("href", `./project.html?name=${project.link}`);
+        projLink.html("<i class=\"fa-brands fa-readme\"></i>INFO");
         projLink.addClass("link");
         const langs = $("<p>");
         langs.html(`<i class="fa-solid fa-code"></i>${project.lang}`);
