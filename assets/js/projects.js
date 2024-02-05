@@ -3,7 +3,7 @@ const genProject = (name, link, lang, img) => {
         name: name,
         link: link,
         lang: lang,
-        img: img || "https://placehold.co/400"
+        img: img || "https://placehold.co/600x400"
     };
 };
 
@@ -11,9 +11,6 @@ const projects = [
     genProject("NC Games (Backend)", "be-nc-games", "JavaScript", "../assets/images/nc-games-be.png"),
     genProject("NC Games (Frontend)", "nc-games-fe", "React", "../assets/images/nc-games-fe.png"),
     genProject("benchIt", "benchIt", "JavaScript, React, React Native"),
-    genProject("NC Games (Backend)", "be-nc-games", "JavaScript"),
-    genProject("NC Games (Frontend)", "nc-games-fe", "React"),
-    genProject("benchIt", "benchIt", "JavaScript, React, React Native")
 ];
 
 $(document).ready(() => {
