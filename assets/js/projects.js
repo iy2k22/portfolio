@@ -14,8 +14,4 @@ const projects = [
 ];
 
 $(document).ready(() => {
-    const main = $("main");
-    
-    for (let i = 0; i < projects.length; ++i) {
-    }
 })
