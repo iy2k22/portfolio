@@ -3,17 +3,17 @@ const genProject = (name, link, lang, img) => {
         name: name,
         link: link,
         lang: lang,
-        img: img || "../assets/images/placeholder.webp"
+        img: img || "https://placehold.co/400"
     };
 };
 
 const projects = [
-    genProject("NC Games (Backend)", "https://github.com/iy2k22/be-nc-games", "JavaScript"),
-    genProject("NC Games (Frontend)", "https://github.com/iy2k22/nc-games-fe", "React"),
-    genProject("benchIt", "https://github.com/valentinbiz/benchIt", "JavaScript, React, React Native"),
-    genProject("NC Games (Backend)", "https://github.com/iy2k22/be-nc-games", "JavaScript"),
-    genProject("NC Games (Frontend)", "https://github.com/iy2k22/nc-games-fe", "React"),
-    genProject("benchIt", "https://github.com/valentinbiz/benchIt", "JavaScript, React, React Native")
+    genProject("NC Games (Backend)", "be-nc-games", "JavaScript", "../assets/images/nc-games-be.png"),
+    genProject("NC Games (Frontend)", "nc-games-fe", "React", "../assets/images/nc-games-fe.png"),
+    genProject("benchIt", "benchIt", "JavaScript, React, React Native"),
+    genProject("NC Games (Backend)", "be-nc-games", "JavaScript"),
+    genProject("NC Games (Frontend)", "nc-games-fe", "React"),
+    genProject("benchIt", "benchIt", "JavaScript, React, React Native")
 ];
 
 $(document).ready(() => {
@@ -23,7 +23,7 @@ $(document).ready(() => {
         projDiv.addClass("col-sm-10 col-md-4 col-lg-3 project");
         const image = $("<img />");
         image.attr("src", project.img);
-        image.addClass("projImg text-center img-fluid");
+        image.addClass("projImg img-fluid");
         const projBox = $("<div>");
         projBox.addClass("box projBox");
         const projName = $("<h4>");
