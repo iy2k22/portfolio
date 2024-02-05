@@ -109,6 +109,16 @@ i {
     padding-bottom: 5px;
 }
 
+.descriptor {
+    margin-bottom: 0;
+}
+
+.descriptor-box {
+    padding: 10px !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 540px) {
     #heading {
         width: 250px;
