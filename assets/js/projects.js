@@ -27,15 +27,18 @@ $(document).ready(() => {
         const projBox = $("<div>");
         projBox.addClass("box projBox");
         const projName = $("<h4>");
+        projName.html("")
         projName.text(project.name);
+        projName.addClass("boxHeading");
         const projLink = $("<a>");
         projLink.attr("href", project.repo);
-        projLink.text("GitHub");
+        projLink.html("<i class=\"fa-brands fa-github-alt\"></i>GitHub");
+        projLink.addClass("link");
         const langs = $("<p>");
-        langs.text(`Languages: ${project.lang}`);
+        langs.html(`<i class="fa-solid fa-code"></i>${project.lang}`);
         projBox.append(projName);
-        projBox.append(projLink);
         projBox.append(langs);
+        projBox.append(projLink);
         projDiv.append(image);
         projDiv.append(projBox);
         main.append(projDiv);

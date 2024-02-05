@@ -59,7 +59,7 @@ main {
     margin: 20px;
 }
 
-#hero h2 {
+.boxHeading {
     border-bottom: 2px solid white;
 }
 
@@ -69,20 +69,20 @@ main {
     left: calc(64 * (var(--mario-width) / 670));
 }
 
-#links {
+.homeLink {
     text-align: center;
+    font-size: x-large;
 }
 
-#links a {
+.link {
     text-transform: uppercase;
-    font-size: x-large;
     background: linear-gradient(180deg, var(--pink-1), var(--pink-2));
     background-clip: text;
     color: transparent;
     padding: 2px;
 }
 
-#links a:hover {
+.link:hover {
     border-bottom: 2px solid var(--pink-1);
 }
 
@@ -98,11 +98,15 @@ i {
 .projImg {
     display: inline;
     margin-bottom: 20px;
-    box-shadow: #00000076 10px 10px;
+    box-shadow: #00000076 0px 10px;
 }
 
 .projBox {
     text-align: center;
+}
+
+.projBox h4 {
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 540px) {
