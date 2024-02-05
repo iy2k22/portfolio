@@ -97,6 +97,10 @@ i {
     width: 100px;
 }
 
+.projImg {
+    width: 300px;
+}
+
 @media screen and (max-width: 540px) {
     #heading {
         width: 250px;

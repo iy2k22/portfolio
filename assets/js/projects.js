@@ -16,18 +16,6 @@ const projects = [
 $(document).ready(() => {
     const main = $("main");
     
-    for (let project of projects) {
-        const heading = $("<h2></h2>");
-        heading.text(project.name);
-        const repo = $("<a>GitHub Repository</a>");
-        repo.attr("href", project.repo);
-        const lang = $("<p></p>");
-        lang.text(`Language(s): ${project.lang}`);
-        const img = $("<img>");
-        img.attr("src", project.img);
-        main.append(heading);
-        main.append(repo);
-        main.append(lang);
-        main.append(img);
+    for (let i = 0; i < projects.length; ++i) {
     }
 })
