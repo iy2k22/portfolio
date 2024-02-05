@@ -63,7 +63,7 @@ main {
     border-bottom: 2px solid white;
 }
 
-#hero img {
+#pfp {
     width: var(--mario-width);
     position: relative;
     left: calc(64 * (var(--mario-width) / 670));

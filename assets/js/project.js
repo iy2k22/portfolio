@@ -42,7 +42,6 @@ $(document).ready(() => {
     $("title").text(name);
     $("#heading h1").text(name);
     
-    $("#box-header").text(name);
     $("#project-img").attr("src", img);
     $("#repo-link").attr("href", repo);
     $("#project-description").text(desc);

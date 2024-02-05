@@ -9,7 +9,7 @@ const genProject = (name, link, lang, img) => {
 
 const projects = [
     genProject("NC Games (Backend)", "be-nc-games", "JavaScript", "../assets/images/nc-games-be.png"),
-    genProject("NC Games (Frontend)", "nc-games-fe", "React", "../assets/images/nc-games-fe.png"),
+    genProject("NC Games (Frontend)", "fe-nc-games", "React", "../assets/images/nc-games-fe.png"),
     genProject("benchIt", "benchit", "JavaScript, React, React Native"),
     genProject("Gardener's Little Helper", "garden", "HTML, CSS, Bootstrap, JavaScript, jQuery", "../assets/images/garden.png")
 ];
