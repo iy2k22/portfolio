@@ -31,20 +31,36 @@ const projData = {
         name: "Error",
         repo: "./projects.html" ,
         lang: [],
-        img: "https://placehold.co/600x400",
+        img: "",
         desc: "It appears you've tried to access a project that doesn't exist. Perhaps you've made a typo?"
     }
 };
 
 $(document).ready(() => {
+    let err = false;
     const search = new URLSearchParams(window.location.search);
     const { name, repo, lang, img, desc } = projData[search.get("name")] || projData.error;
+    if (!projData[search.get("name")])
+        err = true;
+    
+    // tab title
     $("title").text(name);
     $("#heading h1").text(name);
     
+    $("#project-description").text(desc);
+    if (err) {
+        $("#project-description").css({
+            "margin-bottom": 0,
+            "text-align": "center"
+        });
+        $("#box-header").detach();
+        $("#project-img").detach();
+        $("#repo-link").detach();
+        $(".body-row").detach();
+        return;
+    }
     $("#project-img").attr("src", img);
     $("#repo-link").attr("href", repo);
-    $("#project-description").text(desc);
     
     // add list of tech
     const langList = $("#lang");
