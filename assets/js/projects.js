@@ -3,7 +3,7 @@ const genProject = (name, link, lang, img) => {
         name: name,
         link: link,
         lang: lang,
-        img: img || "https://placehold.co/600x400"
+        img: img
     };
 };
 
