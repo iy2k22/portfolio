@@ -1,18 +1,19 @@
-const genProject = (name, link, lang, img) => {
+const genProject = (name, link, lang, img, deployed) => {
     return {
         name: name,
         link: link,
+        deployed: deployed,
         lang: lang,
         img: img
     };
 };
 
 const projects = [
-    genProject("NC Games (Backend)", "be-nc-games", "JavaScript", "../assets/images/nc-games-be.png"),
-    genProject("NC Games (Frontend)", "fe-nc-games", "React", "../assets/images/nc-games-fe.png"),
-    genProject("benchIt", "benchit", "JavaScript, React, React Native"),
-    genProject("Gardener's Little Helper", "garden", "HTML, CSS, Bootstrap, JavaScript, jQuery", "../assets/images/garden.png")
-];
+    ["NC Games (Backend)", "be-nc-games", "JavaScript", "../assets/images/nc-games-be.png"],
+    ["NC Games (Frontend)", "fe-nc-games", "React", "../assets/images/nc-games-fe.png"],
+    ["benchIt", "benchit", "JavaScript, React, React Native", null],
+    ["Gardener's Little Helper", "garden", "HTML, CSS, Bootstrap, JavaScript, jQuery", "../assets/images/garden.png"]
+].map((project) => genProject(...project));
 
 $(document).ready(() => {
     const main = $("#projects");
