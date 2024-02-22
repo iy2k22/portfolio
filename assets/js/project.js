@@ -27,6 +27,13 @@ const projData = {
         img: "../assets/images/garden.png",
         desc: "The first project of the edX front-end bootcamp. It's not the most advanced project but this was where I really got to hone my jQuery skills."
     },
+    "zenarch": {
+        name: "ZenArch",
+        repo: "https://github.com/Kjhohura24/Architecture_App",
+        lang: ["React", "Bootstrap", "Tailwind"],
+        img: "../assets/images/zenarch.png",
+        desc: "The second (and final) project of the edX front-end bootcamp. I was mainly responsible for the image collage on the front page, which uses Tailwind."
+    },
     "error": {
         name: "Error",
         repo: "./projects.html" ,
