@@ -21,10 +21,6 @@ $(document).ready(() => {
         const projDiv = $("<div>");
         projDiv.addClass("col-sm-10 col-md-4 col-lg-3 project");
 
-        const image = $("<img />");
-        image.attr("src", project.img);
-        image.addClass("projImg img-fluid");
-
         const projBox = $("<div>");
         projBox.addClass("box projBox");
 
@@ -43,7 +39,14 @@ $(document).ready(() => {
         projBox.append(projName);
         projBox.append(langs);
         projBox.append(projLink);
-        projDiv.append(image);
+
+        if (project.img) {
+            const image = $("<img />");
+            image.attr("src", project.img);
+            image.addClass("projImg img-fluid");
+            projDiv.append(image);
+        }
+
         projDiv.append(projBox);
         main.append(projDiv);
     }
